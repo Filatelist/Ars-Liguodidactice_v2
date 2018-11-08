@@ -6,6 +6,12 @@
     font-family: Old English Text MT;
     font-size: 15px;
 }
+.lib{
+    width: 200px;
+}
+.libi{
+    width: 100px;
+}
 .download{
     color: #0e1f5b;
     background-color: #D8D8D8;

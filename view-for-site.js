@@ -1,3 +1,4 @@
+let ukrbutton = document.querySelector('.u'),engbutton = document.querySelector('.e');
 class About extends React.Component {
     constructor(props){
         super(props);
@@ -35,6 +36,66 @@ class About extends React.Component {
         );
     }
 }
-(function() {
+class AboutEng extends React.Component {
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div id="eng">
+                <h3 className="font-italic">About</h3>
+                <p>Ars Linguodidacticae publishes outcomes of original research on teaching
+                    Ukrainian and foreign languages and literatures with relevance to secondary as well as
+                    tertiary education. The journal welcomes contributions - reports of empirical research or
+                    conceptual articles - which critically reflect on current theories and practices in teaching
+                    methodology and applied linguistics.</p>
+                <p>The journal’s mission is to serve as a research forum for a diverse group of
+                    scholars and increase the quality of language teaching and learning programmes
+                    offered by language education providers in secondary and higher education by
+                    presenting new models and by disseminating best teaching practices and results of
+                    research activities.</p>
+
+                <p>The journal covers a wide range of language and literature education issues
+                    including history and theory of education, translation pedagogy, language testing and
+                    assessment as well as aspects of professional development, quality assurance and
+                    university language policy.</p>
+                <p>Ars Linguodidacticae is an Open Access journal. Abstracts and full texts of all
+                    articles published in this journal are freely accessible to everyone immediately after
+                    publication without any form of restriction.</p>
+                <p>Publications should be original, technically sound, and clearly written in
+                    Ukrainian, Russian, English or Polish. All papers will be reviewed first by the edition for
+                    quality assurance, with papers not meeting the requirements returned as “not
+                    accepted”. Following this, each accepted paper will be assigned 2 reviewers who will
+                    assess the paper based on the quality of its contribution. Reviews are requested within
+                    21 days of editor request with a decision issued to the author shortly thereafter.</p>
+                <p>Authors are required to pay the manuscript handling fee only after their
+                    manuscripts have been reviewed and accepted for publication by an editor.
+                    The manuscript handling fee for AL is 40 UAH per page.</p>
+                <p>All rights reserved. Under the Open Access Policy, the materials published in the
+                    journal can be used for non-commercial purposes if the original source and author(s)
+                    are cited.
+                    Editor-in Chief: Vyacheslav Shovkovyi, Dr. Sc. in Education, Professor, Head of
+                    the Department of Methodology for Teaching Ukrainian and Foreign Languages and
+                    Literatures, Institute of Philology, Taras Shevchenko National University of Kyiv.</p>
+            </div>
+        );
+    }
+}
+
+window.onload = ukr();
+ukrbutton.addEventListener('click', ukr);
+engbutton.addEventListener('click', eng);
+function ukr() {
     ReactDOM.render(<About />, document.getElementById('about'));
-})();
+    if (document.getElementById('archive')){
+        ReactDOM.render(<Archives />, document.getElementById('about'));
+    }
+}
+function eng() {
+    if (!document.getElementById('eng')) {
+        ReactDOM.render(<AboutEng/>, document.getElementById('about'));
+    }
+    if (document.getElementById('archive')){
+        ReactDOM.render(<Engarchives />, document.getElementById('about'));
+    }
+}
