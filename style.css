@@ -30,6 +30,12 @@
 .info{
     margin-top: 10px;
 }
+.bottom{
+    margin-bottom: 20px;
+}
+.marg{
+    margin-top: 20px;
+}
 .dropdown-menu{
     width: 200px;
 }
@@ -67,12 +73,22 @@ p{
 }
 .expand-lg{
     background-color: #E5E9ED;
-    height: 200px;
+    min-height: 200px;
+    max-height: 100%;
+    padding: 10px;
     width: 100%;
+}
+.h2{
+    margin-top: 20px;
+}
+.infor{
+    width: 100%;
+    min-height: 250px;
 }
 .info{
     width: 100%;
-    min-height: 400px;
+    min-height: 300px;
+
     border-top: 1px solid lightgrey;
 }
 .vid{

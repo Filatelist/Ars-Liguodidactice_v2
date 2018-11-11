@@ -22,16 +22,19 @@ class About extends React.Component {
                 <p>Головний редактор: завідувач кафедри методики викладання української
                     та іноземних мов і літератур Інституту філології, доктор педагогічних наук,
                     професор В’ячеслав Шовковий.</p>
-                <p>Редакційна колегія з актуальних питань навчання української та
-                    іноземних мов охоплює видатних українських та зарубіжних учених у галузі
-                    лінгводидактики.</p>
-                <p>Примірники журналу надсилаються до бібліотек, які входять до
-                    обов’язкового списку розсилки наукових видань, затвердженого МОН
-                    України, та провідних університетів, які забезпечують професійну вищу
-                    освіту в галузі підготовки філологів та вчителів української та іноземних мов.</p>
-                <p>Всі права зарезервовані. При цитуванні слід згадати автора статті та
-                    Журналу. Перепечатки або репродукції у будь-якій формі можливі лише за
-                    попереднім дозволом видавця.</p>
+                <div className="infor">
+                    <p>Редакційна колегія з актуальних питань навчання української та
+                        іноземних мов охоплює видатних українських та зарубіжних учених у галузі
+                        лінгводидактики.</p>
+                    <p>Примірники журналу надсилаються до бібліотек, які входять до
+                        обов’язкового списку розсилки наукових видань, затвердженого МОН
+                        України, та провідних університетів, які забезпечують професійну вищу
+                        освіту в галузі підготовки філологів та вчителів української та іноземних мов.</p>
+                    <p>Всі права зарезервовані. При цитуванні слід згадати автора статті та
+                        Журналу. Перепечатки або репродукції у будь-якій формі можливі лише за
+                        попереднім дозволом видавця.</p>
+                </div>
+
             </div>
         );
     }
@@ -81,21 +84,49 @@ class AboutEng extends React.Component {
         );
     }
 }
-
+class Foot extends React.Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div className="information">
+                <p className="marg">Журнал Ars Linguodidacticae належить до наукометричних баз даних</p>
+                <p>E-mail - sergshovkanser@gmail.com</p>
+                <p><a href="http://www.nbuv.gov.ua/" target="_blank"><img className="lib" src="images/nbuv.png" alt="1"/></a></p>
+                <p><a href="http://www.library.univ.kiev.ua/ukr/title4.php3" target="_blank"><img className="libi" src="images/zagolov.png" alt="2"/></a></p>
+            </div>
+        );
+    }
+}
+class Engfoot extends React.Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div className="information">
+                <p>Journal Ars Linguodidacticae belongs to science-computer databases</p>
+                <p>E-mail - sergshovkanser@gmail.com</p>
+                <p><a href="http://www.nbuv.gov.ua/" target="_blank"><img className="lib" src="images/nbuv.png" alt="1"/></a></p>
+                <p><a href="http://www.library.univ.kiev.ua/ukr/title4.php3" target="_blank"><img className="libi" src="images/zagolov.png" alt="2"/></a></p>
+            </div>
+        );
+    }
+}
 window.onload = ukr();
 ukrbutton.addEventListener('click', ukr);
 engbutton.addEventListener('click', eng);
 function ukr() {
     ReactDOM.render(<About />, document.getElementById('about'));
-    if (document.getElementById('archive')){
-        ReactDOM.render(<Archives />, document.getElementById('about'));
-    }
+    ReactDOM.render(<Foot />, document.getElementById('footer'));
+
 }
 function eng() {
-    if (!document.getElementById('eng')) {
-        ReactDOM.render(<AboutEng/>, document.getElementById('about'));
-    }
+        ReactDOM.render(<AboutEng />, document.getElementById('about'));
+        ReactDOM.render(<Engfoot />, document.getElementById('footer'));
     if (document.getElementById('archive')){
         ReactDOM.render(<Engarchives />, document.getElementById('about'));
+        ReactDOM.render(<Engoot />, document.getElementById('footer'));
     }
 }

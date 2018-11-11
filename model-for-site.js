@@ -78,6 +78,7 @@ class Policy extends React.Component{
                                                                            target="_blank">&quot;Elsevier&quot;</a> щодо
                     того, як уникнути порушень публічної етики під час підготовки академічної
                     публікації.</p>
+                <div className="info">
                 <h5 className="left">Авторське право</h5>
                 <p>
                     Надання рукопису статті редакції Журналу передбачає згоду автора / авторів
@@ -87,7 +88,7 @@ class Policy extends React.Component{
                     поданий рукопис не порушує авторських прав або інших прав будь-якої сторони
                     та що цей документ раніше не був опублікований і не був поданий одночасно з
                     будь-яким іншим виданням.</p>
-                <div>
+
                     <p className="paragraph">The submission of the manuscript to the Editorial Board of the Current
                         Issues of Mass
                         Communication involves the consent of the author / authors to publish the paper in print and
@@ -108,7 +109,7 @@ class EditColegy extends React.Component{
     }
     render(){
         return(
-                <div>
+                <div className="infor">
                     <h2 className="header" id="2">Редакційна колегія</h2>
                     <p>Головний редактор:
                         В’ячеслав Шовковий, доктор педагогічних наук, професор, завідувач
@@ -116,46 +117,51 @@ class EditColegy extends React.Component{
                         Інституту філології Київського національного університету імені Тараса
                         Шевченка (Україна).</p>
                     <h4 className="color-blue">Редакція:</h4>
-                    <p>Любашенко Олеся, доктор педагогічних наук, професор, професор
-                        кафедри методики викладання української та іноземних мов і літератур
-                        Інституту філології Київського національного університету імені Тараса
-                        Шевченка (Україна);</p>
-                    <p>Бех Петро, кандидат філологічних наук, професор, професор кафедри
-                        методики викладання української та іноземних мов і літератур Інституту
-                        філології, проректор з науково-педагогічної роботи (міжнародні зв&#39;язки),
-                        Київського національного університету імені Тараса Шевченка, (Україна);</p>
-                    <p>Данчак Павел, доктор педагогічних наук, професор, професор кафедри
-                        педагогіки інституту філософії і релігієзнавства Прешовського університету
-                        (Словацька Республіка);</p>
-                    <p>Зязюн Лариса, доктор педагогічних наук, професор, професор кафедри
-                        романської філології Інституту філології Київського національного університету
-                        імені Тараса Шевченка, (Україна);</p>
-                    <p>Задорожна Ірина, доктор педагогічних наук, професор, завідувач кафедри
-                        практики англійської мови та методики її викладання Тернопільського
-                        національного педагогічного університету імені В.Гнатюка, (Україна);</p>
-                    <p>Морська Лілія, доктор педагогічних наук, професор, завідувач кафедри
-                        англійської філології Тернопільського національного педагогічного університету
-                        імені В.Гнатюка, (Україна);</p>
-                    <p>Петращук Олена, доктор педагогічних наук, професор, професор кафедри
-                        авіаційної англійської мови Інституту аеронавігації Національного авіаційного
-                        університету (Україна); </p>
-                    <p>Сєронь Роман, доктор педагогічних наук, професор, директор Інституту
-                        педагогіки Відділу права і наук про суспільство в Стальовій  Волі Люблінського
-                        католицького університету імені Яна Павла II (Республіка Польща).</p>
-                    <p>Кавицька Тамара, кандидат педагогічних наук, асистент кафедри методики
-                        викладання української та іноземних мов і літератур Інституту філології
-                        Київського національного університету імені Тараса Шевченка (Україна).</p>
-                    <h5 className="color-blue">Виконавчий секретар:</h5>
-                    <p>Сем’ян Наталія, асистент кафедри методики викладання української та
-                        іноземних мов і літератур Інституту філології Київського національного
-                        університету імені Тараса Шевченка (Україна).</p>
-                    <h3 className="h" id="3a">Етика публікацій</h3>
-                    <p>Ми також рекомендуємо ознайомитись із набором ресурсів з етики
-                        публікацій, рекомендованими &quot;Elsevier&quot;: <a href="http://www.elsevier.com/ethics/home">http://www.elsevier.com/editors/perk</a>.</p>
-                    <p>Та із рекомендаціями &quot;Elsevier&quot;
-                        щодо того, як уникнути порушень публічної етики під час підготовки
-                        академічної публікації: <a href="http://www.elsevier.com/ethics/home">http://www.elsevier.com/ethics/home</a>.</p>
-                </div>
+                    <ul>
+                        <li>Любашенко Олеся, доктор педагогічних наук, професор, професор
+                            кафедри методики викладання української та іноземних мов і літератур
+                            Інституту філології Київського національного університету імені Тараса
+                            Шевченка (Україна);</li>
+                        <li>Бех Петро, кандидат філологічних наук, професор, професор кафедри
+                            методики викладання української та іноземних мов і літератур Інституту
+                            філології, проректор з науково-педагогічної роботи (міжнародні зв&#39;язки),
+                            Київського національного університету імені Тараса Шевченка, (Україна);</li>
+                        <li>Данчак Павел, доктор педагогічних наук, професор, професор кафедри
+                            педагогіки інституту філософії і релігієзнавства Прешовського університету
+                            (Словацька Республіка);</li>
+                        <li>Зязюн Лариса, доктор педагогічних наук, професор, професор кафедри
+                            романської філології Інституту філології Київського національного університету
+                            імені Тараса Шевченка, (Україна);</li>
+                        <li>Задорожна Ірина, доктор педагогічних наук, професор, завідувач кафедри
+                            практики англійської мови та методики її викладання Тернопільського
+                            національного педагогічного університету імені В.Гнатюка, (Україна);</li>
+                        <li>Морська Лілія, доктор педагогічних наук, професор, завідувач кафедри
+                            англійської філології Тернопільського національного педагогічного університету
+                            імені В.Гнатюка, (Україна);</li>
+                        <li>Петращук Олена, доктор педагогічних наук, професор, професор кафедри
+                            авіаційної англійської мови Інституту аеронавігації Національного авіаційного
+                            університету (Україна); </li>
+                        <li>Сєронь Роман, доктор педагогічних наук, професор, директор Інституту
+                            педагогіки Відділу права і наук про суспільство в Стальовій  Волі Люблінського
+                            католицького університету імені Яна Павла II (Республіка Польща).</li>
+                        <li>Кавицька Тамара, кандидат педагогічних наук, асистент кафедри методики
+                            викладання української та іноземних мов і літератур Інституту філології
+                            Київського національного університету імені Тараса Шевченка (Україна).</li>
+                    </ul>
+                    <div className="info">
+                        <h5 className="color-blue">Виконавчий секретар:</h5>
+                        <p>Сем’ян Наталія, асистент кафедри методики викладання української та
+                            іноземних мов і літератур Інституту філології Київського національного
+                            університету імені Тараса Шевченка (Україна).</p>
+                        <h4 className="h h2" id="3a">Етика публікацій</h4>
+                        <p>Ми також рекомендуємо ознайомитись із набором ресурсів з етики
+                            публікацій, рекомендованими &quot;Elsevier&quot;: <a href="http://www.elsevier.com/ethics/home">http://www.elsevier.com/editors/perk</a>.</p>
+                        <p>Та із рекомендаціями &quot;Elsevier&quot;
+                            щодо того, як уникнути порушень публічної етики під час підготовки
+                            академічної публікації: <a href="http://www.elsevier.com/ethics/home">http://www.elsevier.com/ethics/home</a>.</p>
+
+                    </div>
+                    </div>
         );
     }
 }
@@ -224,26 +230,9 @@ class PolicyEng extends React.Component{
                     Please send your resume to the Editorial Board at <a href="mailto:pedagogical.studies@gmail.com">pedagogical.studies@gmail.com</a></p>
                 <p>The Journal is guided by ethical standards, developed by the Committee on
                     Publication Ethics. The standards are available from <a href="http://publicationethics.org">http://publicationethics.org</a>.</p>
+                <div className="info">
                 <h5>Copyright</h5>
 
-                <p>The submission of the manuscript to the Editorial Board of the Current Issues of
-                    Mass Communication involves the consent of the author / authors to publish the paper in
-                    print and electronic versions of the Journal, and to transfer to the Journal the respective
-                    copyright. The author guarantees that the submitted manuscript does not infringe copyright
-                    or other rights of any party, and that the paper has not been previously published and is not
-                    submitted simultaneously to any other edition.</p>
-                <div>
-                    <p className="paragraph">The submission of the manuscript to the Editorial Board of the Current
-                        Issues of Mass
-                        Communication involves the consent of the author / authors to publish the paper in print and
-                        electronic versions
-                        of the Journal, and to transfer to the Journal the respective copyright. The author guarantees
-                        that the submitted
-                        manuscript does not infringe copyright or other rights of any party, and that the paper has not
-                        been previously
-                        published and is not submitted simultaneously to any other edition.</p>
-                </div>
-                <div>
                     <p className="paragraph">The submission of the manuscript to the Editorial Board of the Current
                         Issues of Mass
                         Communication involves the consent of the author / authors to publish the paper in print and
@@ -264,35 +253,40 @@ class EditColegyEng extends React.Component{
     }
     render(){
         return(
-            <div>
+            <div className="infor">
                 <h2 className="header" id="2">Editorial Board</h2>
                 <p>Editor-in-Chief:
                     Vyacheslav Shovkovyi, Dr. Sc. in Education, Professor, Head of the Department of
                     Methodology for Teaching Ukrainian and Foreign Languages and Literatures, Institute of
                     Philology, Taras Shevchenko National University of Kyiv, Ukraine</p>
-                <h2 className="color-blue">Editional Board:</h2>
-                <p>Olesia Liubashenko, Dr. Sc. in Education, Professor, Taras Shevchenko National
-                    University of Kyiv, Ukraine</p>
-                <p>Petro Bekh, PhD in Philology, Professor, Taras Shevchenko National University of Kyiv,
-                    Ukraine</p>
-                <p>Pavel Danchak, Dr. Sc. in Education, Professor, the University of Presov, the Slovak
-                    Republic</p>
-                <p>Larysa Ziaziun, Dr. Sc. in Education, Professor, Taras Shevchenko National University of
-                    Kyiv, Ukraine</p>
-                <p>Lilia Morska, Dr. Sc. in Education, Professor, Ternopil Volodymyr Hnatiuk National Pedagogical University, Ukraine</p>
-                <p>Olena Petraschuk, Dr. Sc. in Education, Professor, National Aviation University, Ukraine</p>
-                <p>Roman Sieron, Dr. Sc. in Education, Professor, John Paul II Catholic University of Lublin, the Republic of Poland
-                </p>
-                <p>Tamara Kavytska, PhD in Education, Assistant Professor, Taras Shevchenko National University of Kyiv, Ukraine  </p>
-                <p>Iryna Zadorozhna, Dr. Sc. in Education, Professor, Ternopil Volodymyr Hnatiuk National Pedagogical University, Ukraine</p>
-                <h5 className="color-blue">Executive Secretary:</h5>
-                <p>Natalia Semian, Lecturer, Taras Shevchenko National University of Kyiv, Ukraine  </p>
-                <h3 className="h" id="3a">Publication ethics</h3>
-                <p>We also suggest getting acquainted with the Publishing Ethics Resource Kit,
-                    recommended by the «Elsevier»: <a href="http://www.elsevier.com/editors/perk">http://www.elsevier.com/editors/perk</a>.</p>
-                <p>The guidelines on how to avoid the violations of the Publication Ethics while preparing the
-                    academic publication are available from <a href="http://www.elsevier.com/ethics/home">http://www.elsevier.com/ethics/home</a>.</p>
-            </div>
+                <h4 className="color-blue">Editional Board:</h4>
+                <ul>
+                    <li>Olesia Liubashenko, Dr. Sc. in Education, Professor, Taras Shevchenko National
+                        University of Kyiv, Ukraine</li>
+                    <li>Petro Bekh, PhD in Philology, Professor, Taras Shevchenko National University of Kyiv,
+                        Ukraine</li>
+                    <li>Pavel Danchak, Dr. Sc. in Education, Professor, the University of Presov, the Slovak
+                        Republic</li>
+                    <li>Larysa Ziaziun, Dr. Sc. in Education, Professor, Taras Shevchenko National University of
+                        Kyiv, Ukraine</li>
+                    <li>Lilia Morska, Dr. Sc. in Education, Professor, Ternopil Volodymyr Hnatiuk National Pedagogical University, Ukraine</li>
+                    <li>Olena Petraschuk, Dr. Sc. in Education, Professor, National Aviation University, Ukraine</li>
+                    <li>Roman Sieron, Dr. Sc. in Education, Professor, John Paul II Catholic University of Lublin, the Republic of Poland
+                    </li>
+                    <li>Tamara Kavytska, PhD in Education, Assistant Professor, Taras Shevchenko National University of Kyiv, Ukraine  </li>
+                    <li>Iryna Zadorozhna, Dr. Sc. in Education, Professor, Ternopil Volodymyr Hnatiuk National Pedagogical University, Ukraine</li>
+                </ul>
+                <div className="info">
+                    <h4 className="color-blue">Executive Secretary:</h4>
+                    <p>Natalia Semian, Lecturer, Taras Shevchenko National University of Kyiv, Ukraine  </p>
+                    <h3 className="h" id="3a">Publication ethics</h3>
+                    <p>We also suggest getting acquainted with the Publishing Ethics Resource Kit,
+                        recommended by the «Elsevier»: <a href="http://www.elsevier.com/editors/perk">http://www.elsevier.com/editors/perk</a>.</p>
+                    <p>The guidelines on how to avoid the violations of the Publication Ethics while preparing the
+                        academic publication are available from <a href="http://www.elsevier.com/ethics/home">http://www.elsevier.com/ethics/home</a>.</p>
+
+                </div>
+                 </div>
         );
     }
 }
@@ -303,10 +297,10 @@ class Foot extends React.Component{
     render(){
         return(
         <div className="information">
-            <p>Журнал Ars Linguodidacticae належить до наукометричних баз даних</p>
+            <p className="marg">Журнал Ars Linguodidacticae належить до наукометричних баз даних</p>
+            <p>E-mail - sergshovkanser@gmail.com</p>
             <p><a href="http://www.nbuv.gov.ua/" target="_blank"><img className="lib" src="images/nbuv.png" alt="1"/></a></p>
             <p><a href="http://www.library.univ.kiev.ua/ukr/title4.php3" target="_blank"><img className="libi" src="images/zagolov.png" alt="2"/></a></p>
-            <p>E-mail - sergshovkanser@gmail.com</p>
         </div>
         );
     }
@@ -319,9 +313,9 @@ class Engfoot extends React.Component{
         return(
             <div className="information">
                 <p>Journal Ars Linguodidacticae belongs to science-computer databases</p>
+                <p>E-mail - sergshovkanser@gmail.com</p>
                 <p><a href="http://www.nbuv.gov.ua/" target="_blank"><img className="lib" src="images/nbuv.png" alt="1"/></a></p>
                 <p><a href="http://www.library.univ.kiev.ua/ukr/title4.php3" target="_blank"><img className="libi" src="images/zagolov.png" alt="2"/></a></p>
-                <p>E-mail - sergshovkanser@gmail.com</p>
             </div>
         );
     }
