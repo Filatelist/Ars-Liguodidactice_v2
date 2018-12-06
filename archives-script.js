@@ -11,6 +11,7 @@ class Archives extends React.Component{
                     <li className="list li"><a href="number1.html">Ars linguodidacticae №1 (1-2017)</a></li>
                     <li className="list li"><a href="number2.html">Ars linguodidacticae №2 (1-2018)</a></li>
                 </ul>
+                <span className="margines"></span>
             </div>
         );
     }
@@ -27,6 +28,7 @@ class Engarchives extends React.Component{
                     <li className="list li"><a href="number1.html">Ars linguodidacticae №1 (1-2017)</a></li>
                     <li className="list li"><a href="number2.html">Ars linguodidacticae №2 (1-2018)</a></li>
                 </ul>
+                <span className="margines"></span>
             </div>
         );
     }

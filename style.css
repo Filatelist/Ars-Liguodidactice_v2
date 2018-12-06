@@ -14,21 +14,26 @@
 }
 .download{
     color: #0e1f5b;
-    background-color: #D8D8D8;
+    background-color: linear-gradient(to top, #fefcea, #f1da36);;
+    transition: 0.3s;
+}
+.co{
+    background-color: #F9F9F9;
+}
+.download:hover{
+    color: white;
+    background-color: dodgerblue;
 }
 .information{
     margin: 25px;
-}
-.download:hover{
-    color: #018DED;
 }
 .format {
     height: 300px;
     background-color: #D8D8D8;
 }
 
-.info{
-    margin-top: 10px;
+.s{
+    display: flex;
 }
 .bottom{
     margin-bottom: 20px;
@@ -52,44 +57,59 @@
 .color-blue{
     color: blue;
 }
-
+.bg-dark-bl{
+    background: linear-gradient(to right,#202C2C, #202C38, #202C44,#202C50);
+}
 .card-img-right{
     margin-left: 50px;
 }
 .cover{
     width: 250px;
 }
+.border-left-sm{
+    border-left: 2px solid deepskyblue;
+}
+
 .part{
     margin: 20px;
 }
-p{
-    text-indent: 20px;
+
+.pa{
+    text-indent: 0;
 }
 .card{
     width: 100%;
 }
 .h{
-    color: #1a0dab;
+    color: darkblue;
+}
+.outline{
+    color: blue;
+}
+.margines{
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.m{
+    margin-bottom: 20px;
 }
 .expand-lg{
-    background-color: #E5E9ED;
-    min-height: 200px;
+    border-top: 2px solid lightgrey;
+
     max-height: 100%;
     padding: 10px;
     width: 100%;
+    display: flex;
 }
 .h2{
     margin-top: 20px;
 }
 .infor{
     width: 100%;
-    min-height: 250px;
 }
 .info{
     width: 100%;
-    min-height: 300px;
-
-    border-top: 1px solid lightgrey;
+    border-top: 1px solid lightskyblue;
 }
 .vid{
     margin: 15px;
@@ -103,6 +123,7 @@ p{
     width: 20px;
     height: 20px;
 }
+
 .btn{
     border: none;
     background-color: #F8F9FA;
@@ -111,5 +132,5 @@ p{
     color: black;
 }
 .a:hover{
-    color: grey;
+    color: blue;
 }

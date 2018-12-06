@@ -34,7 +34,7 @@ class About extends React.Component {
                         Журналу. Перепечатки або репродукції у будь-якій формі можливі лише за
                         попереднім дозволом видавця.</p>
                 </div>
-
+                <span className="margines"></span>
             </div>
         );
     }
@@ -80,6 +80,7 @@ class AboutEng extends React.Component {
                     Editor-in Chief: Vyacheslav Shovkovyi, Dr. Sc. in Education, Professor, Head of
                     the Department of Methodology for Teaching Ukrainian and Foreign Languages and
                     Literatures, Institute of Philology, Taras Shevchenko National University of Kyiv.</p>
+                <span className="margines"></span>
             </div>
         );
     }
@@ -119,14 +120,11 @@ ukrbutton.addEventListener('click', ukr);
 engbutton.addEventListener('click', eng);
 function ukr() {
     ReactDOM.render(<About />, document.getElementById('about'));
-    ReactDOM.render(<Foot />, document.getElementById('footer'));
 
 }
 function eng() {
         ReactDOM.render(<AboutEng />, document.getElementById('about'));
-        ReactDOM.render(<Engfoot />, document.getElementById('footer'));
     if (document.getElementById('archive')){
         ReactDOM.render(<Engarchives />, document.getElementById('about'));
-        ReactDOM.render(<Engoot />, document.getElementById('footer'));
     }
 }
